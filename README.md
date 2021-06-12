@@ -53,6 +53,8 @@
   - Software as a service (SaaS)
      - completeed product that is run and manger by the service provider
  
+ ![alt text](https://github.com/hieunugent/awspractitioner/Capture.JPG?raw=true)
+
   
   
   
