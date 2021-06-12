@@ -31,7 +31,7 @@
   - increase speed and agility
   - stop spending money running and maintainging data center
   - go global in minutes: leverage the AWS globale infrastureture
- - problem solver by cloud:
+- problem solver by cloud:
   - Flexibility: change resourse types when needed
   - cost effectiveness: pay ass you go
   - Scalability : accommodate larger loads by making hardware stronger or adding additional node
