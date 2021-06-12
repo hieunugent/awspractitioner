@@ -54,7 +54,12 @@
      - completeed product that is run and manger by the service provider
  
  ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/Capture.JPG?raw=true)
-
-  
-  
+- example of CLoud Computing Types
+  - infrastructure as a service: Amazon EC2, GCP, Azure, Rackspace, Linode
+  - Platform as a service : Elastic Beanstalk(on AWS), Heroku, Google app Engine (GCP), Azure
+  - Softwarea as a service : Many AWS service (ex: Rekognition for ML), Goole app. Gropbox, Zoom 
+- Pricing of the cloud   
+  - Compute
+  - storage
+  - data transfer Out of the cloud
   
