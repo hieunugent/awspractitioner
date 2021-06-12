@@ -62,4 +62,20 @@
   - Compute
   - storage
   - data transfer Out of the cloud
-  
+- use cases includage
+  - Enterprise IT, Backup store Big Data Analytics
+  - website hosting Mobile and Social APPs, Gaming 
+- AWS Global INfrastructure
+    - regions: cluter of data centers, most AWS services are region-scoped
+    - availability Zones:
+      - each region has many availability zones ussualy 3 min 2 max 6 : ap-southeast-2a, ap-southest-2b
+      - each available zone is one or more discrete data cneter with redundant power, networing and connectivity
+      - they are separate form each other , so that they area isolate from disaster
+      - they area connected with highbandwidth, ultra-low latency networking
+    - Data Centers, Edge Locations, Points Of presense 
+    - How to choose an AWS region:
+        - Compliance with data governance and legal requirements : data never leaves a region without your explicit permission
+        - proximity to customers: reduced latency 
+        - Available services within a region: new services and new feature aren't available in every Region 
+        - pricing varies region to region and is transparent in the service pricing page
+    
