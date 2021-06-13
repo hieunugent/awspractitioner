@@ -80,3 +80,12 @@
         - pricing varies region to region and is transparent in the service pricing page
 - SHAre Responsebility:
    ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/shareresponse.JPG?raw=true)
+## IAM - Identity and Access Management
+- IAM: USers & Groups
+    - IAM = Identity and Access Management, Globoal service
+    - Root Accountr created by default shouldn't e used or shared
+    - users are people within your organization, and can be grouped
+    - groups only contain users not other groups
+    - users dont have to belong to a group, and user can belong to multiple groups
+    ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/groups.JPG?raw=true)
+
