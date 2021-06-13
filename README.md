@@ -89,3 +89,10 @@
     - users dont have to belong to a group, and user can belong to multiple groups
     ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/groups.JPG?raw=true)
 
+- IAM: Permissions
+    - Users or groups can be assigned JSON documents called policies
+    - these policies define the permission of the users
+    - In AWS you apply the least privilege principle : dont give more permissions than a user needs
+- IAM : policies:
+    ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/IAMpolicy.JPG?raw=true)
+    ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/policysStructure.JPG?raw=true)
