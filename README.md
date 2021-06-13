@@ -96,3 +96,18 @@
 - IAM : policies:
     ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/IAMpolicy.JPG?raw=true)
     ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/policysStructure.JPG?raw=true)
+- IAM - Password policy
+   - Strong passwords = higher security for your account 
+   - In AWS, you can setup a password policy 
+      - set a munimum password length 
+      - require specific character types
+      - allow all IAM users to change their own password 
+      - requires users to change their password 
+      - require user change password after sometime
+      - prevent password reuse
+   - Multi Factor Authentication - MFA
+      - user have access to your account and can change config or delete resource in your AWS 
+      - you want to protect your root account and IAM user 
+      - MFA = password + security device you own 
+       ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/MFA.JPG?raw=true)
+      - main benefit of MFA: if password is stolen or hacked the account is not compromised
