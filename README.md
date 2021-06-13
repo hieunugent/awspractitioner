@@ -78,4 +78,5 @@
         - proximity to customers: reduced latency 
         - Available services within a region: new services and new feature aren't available in every Region 
         - pricing varies region to region and is transparent in the service pricing page
-    
+- SHAre Responsebility:
+   ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/shareresponse.JPG?raw=true)
