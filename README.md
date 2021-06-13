@@ -53,7 +53,7 @@
   - Software as a service (SaaS)
      - completeed product that is run and manger by the service provider
  
- ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/Capture.JPG?raw=true)
+   ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/Capture.JPG?raw=true)
 - example of CLoud Computing Types
   - infrastructure as a service: Amazon EC2, GCP, Azure, Rackspace, Linode
   - Platform as a service : Elastic Beanstalk(on AWS), Heroku, Google app Engine (GCP), Azure
