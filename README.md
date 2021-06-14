@@ -132,3 +132,8 @@
     - SDKs(java , python , PHP, .Net, JS, Go , NOde.js, C++)
     - Mobile SDKs
     - IOT Devices SDKs (Embedded C,  Arduino, ...) 
+- IAM roles for services
+  - somw AWS service will need to perform actions on your befhalf
+  - to do so we will assign permisssions to Aws service with IAM roles 
+  - common roles : EC2 instance Role Lambda Function Roles, ROle For Clound Formation 
+   ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/IAMroles.JPG?raw=true)
