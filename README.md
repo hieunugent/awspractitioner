@@ -137,3 +137,12 @@
   - to do so we will assign permisssions to Aws service with IAM roles 
   - common roles : EC2 instance Role Lambda Function Roles, ROle For Clound Formation 
    ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/IAMroles.JPG?raw=true)
+- IAM Security Tools
+  - Iam Credential Report (account level)
+     - a repost taht lst all your accounts user and the status of their various credential 
+  - Iam Access Advisor user level
+    - access advisor show the service permissions granted to a user and when those serviece wre last access 
+    - you can use this information to revise your policies
+- Shared Resposibility MOdel For IAM
+  ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/ShareResIAM.JPG?raw=true)
+
