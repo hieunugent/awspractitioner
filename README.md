@@ -111,3 +111,24 @@
       - MFA = password + security device you own 
        ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/MFA.JPG?raw=true)
       - main benefit of MFA: if password is stolen or hacked the account is not compromised
+- HOw can users access AWS
+  - three option to access AWS:
+    - Aws Management console : protect by password and MFA
+    - AWS command line interface (CLI) : protect by access keys
+    - AWS software DEveloper kit (SDK) for code protected by access keys
+  - Access keys are generated through the Aws Console
+  - Users Manage theri own access keys
+  - Access keys are secret, just like a password 
+- what is AWS CLI ?
+  - tool to interact with AWS serevice using commmands in command-line shell
+  - direct access to the public APIs of AWS services
+  - can develop scripts to manage your resources
+- what is the SDK ?
+  - AWS software development kit
+  - language specific APIs
+  - enable you to access and manage AWS sevices programmatically 
+  - Embedded within your application 
+  - supports :
+    - SDKs(java , python , PHP, .Net, JS, Go , NOde.js, C++)
+    - Mobile SDKs
+    - IOT Devices SDKs (Embedded C,  Arduino, ...) 
