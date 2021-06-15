@@ -212,6 +212,33 @@
           - distirbuted dile systems
           - ![storagoptimised](https://user-images.githubusercontent.com/22860697/121980403-bac4e900-cd40-11eb-87e9-b5ba3af38ad4.JPG)
 
+- Introduction to security Groups
+  - security groups are the fundamental of network security In AWS
+  - they control how traddic is allowed into or out of our EC2 instances
+  - ![securitygroup](https://user-images.githubusercontent.com/22860697/122133611-eb189000-cdf1-11eb-87f8-2d7acecb8d45.JPG)
+
+  - only contain allow rules
+  - rules can reference by IP or by Security Group
+  - Security group acting as a firewall on EC2 instances
+  - they regulate: 
+      - access to ports
+      - authoriesd IP ranges  - IPv4 and IPv6
+      - control inbound network from other to the instance
+      - control outbound network from instance to other
+  - ![securitryDiagram](https://user-images.githubusercontent.com/22860697/122134037-b78a3580-cdf2-11eb-9fe1-fdcd1118112c.JPG)
+  - good to know:
+    - can be attached to multiple instance
+    - locked down to a region /VPC combination
+    - live outside the EC2 - if traffic is blocked the EC2 instance wont see it 
+    - it good to maintain one separate security group for ssh access
+    - if your application is not accessible (timeout), then it's a security group issue
+    - if give a " connectio refused error, then it's an application error opr it's not lauched 
+    - by default all inbound traffic is block 
+    - all outbound traffic is authoried
+    - ![securitygroupdiagram2](https://user-images.githubusercontent.com/22860697/122134584-c1606880-cdf3-11eb-9f6f-bec94db45f16.JPG)
+  - classic Ports to know 
+    - ![classicport](https://user-images.githubusercontent.com/22860697/122134776-2320d280-cdf4-11eb-83a6-d5ffb0f7c1c7.JPG)
+
 
         
     
