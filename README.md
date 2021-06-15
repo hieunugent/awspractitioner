@@ -176,7 +176,42 @@
       - downloading common files  from the internet
       - anything you can think of
     - it run with Root user
-  - EC2 INstance typ example![EC2InstanceType](https://user-images.githubusercontent.com/22860697/121975134-c4951f00-cd35-11eb-8fcd-3152d1034869.JPG)
+- EC2 INstance typ example
+    ![EC2InstanceType](https://user-images.githubusercontent.com/22860697/121975134-c4951f00-cd35-11eb-8fcd-3152d1034869.JPG)
+- EC2 Instance Types 
+    - types of EC2 instance are used to optimised diff use cases
+    - ![Ec2typesuse](https://user-images.githubusercontent.com/22860697/121979329-cc0cf600-cd3e-11eb-8602-f304355ae9c0.JPG)
+    - General purpose:
+      - great for diversity of workload such as web servers or code repo
+      - balance between : compute, memory, networking
+    - COmpute Optimized:
+      - Great for Compute intensive task that require high performance processors
+        - Batch Processing workloads
+        - medias transcoding 
+        - high performance web serves
+        - high performance computing HPC
+        - scientific modeling and machine learning
+        - dedicated gaming servers
+        - ![computeoptimize](https://user-images.githubusercontent.com/22860697/121980082-33777580-cd40-11eb-953e-cb444a287e66.JPG)
 
-    ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/EC2InstanceType.JPG?raw=true)
+    - Memory Oprimized
+        - fast performance for workload that process larger data sets in memory
+        - Use cases :
+          - high performance , relational / non relational databases
+          - distribute web scale cahse stores
+          - in memory data bases opimised for BI (business intelligent)
+          - APplication performing realtime processing of big unstructure data 
+          - ![memoryoptimise](https://user-images.githubusercontent.com/22860697/121980029-16db3d80-cd40-11eb-88cd-0ab667028076.JPG)
+     - Storage Optimizes
+        - Great for storage intensive tasks that require high sequential read and write access to large data sets on local storage 
+        - use cases:
+          - hihg frequency online transaction procesing (OLTP) systems
+          - realtional and NOSQL databases
+          - cache fpr in memory database 
+          - Data warehouseing appilcations
+          - distirbuted dile systems
+          - ![storagoptimised](https://user-images.githubusercontent.com/22860697/121980403-bac4e900-cd40-11eb-87e9-b5ba3af38ad4.JPG)
+
+
+        
     
