@@ -146,3 +146,37 @@
 - Shared Resposibility MOdel For IAM
   ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/ShareResIAM.JPG?raw=true)
 
+## EC2 - Elastic Compute Cloud
+- Amazopn EC2
+  - EC2 is one of the most pouylar of AWS offering 
+  - EC2 is Elastic compute cloud is infrastructure as a service
+  - it mainly consists in the capability of :
+    - renting virtual machines (EC2)
+    - storing data virtual drive EBS
+    - distributing load across machines ELB
+    - Scaling the services using an auto scaling group
+  - Knowing EC2 is fundamental to understand how the cloud works
+ - EC2 sizing and configuration options
+    - OS : linux win Mac
+    - how much compute power and cores CPU
+    - how much random access memory Ram
+    - how much storage space :
+      - Network attachhed (EBS and EFS)
+      - hardware (Ec2 Instance store)
+    - Network card speed of the card public IP Address
+    - firewall rules security group
+    - Bootraps Scipt( configure at first launch ) : EC2 User Data
+ - EC2 Users Data
+    - It is possible to bootstrap our instances using an EC2 USer data Script
+    - Bootstrapping means launching acommands when a machine starts
+    - that scropts is only run once at the instance first Start
+    - EC2 user data is used to automate boot tasks such as:
+      - installing updates 
+      - installing software
+      - downloading common files  from the internet
+      - anything you can think of
+    - it run with Root user
+  - EC2 INstance typ example![EC2InstanceType](https://user-images.githubusercontent.com/22860697/121975134-c4951f00-cd35-11eb-8fcd-3152d1034869.JPG)
+
+    ![alt text](https://github.com/hieunugent/awspractitioner/blob/main/EC2InstanceType.JPG?raw=true)
+    
