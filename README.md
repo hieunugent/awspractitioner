@@ -258,6 +258,8 @@
     - no control over instance placement (can move hardware after STop/ Start)
     - ![comparededicate](https://user-images.githubusercontent.com/22860697/122139707-6d0eb600-cdfe-11eb-89c3-2f700872111c.JPG)
    - ![example](https://user-images.githubusercontent.com/22860697/122139869-cb3b9900-cdfe-11eb-8c25-1dc823f1e82f.JPG)
+- Share REsponsibility Model for EC2
+- ![compareresponse](https://user-images.githubusercontent.com/22860697/122140145-574dc080-cdff-11eb-906b-9f6419a92127.JPG)
  
 
 
