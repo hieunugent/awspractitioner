@@ -238,6 +238,27 @@
     - ![securitygroupdiagram2](https://user-images.githubusercontent.com/22860697/122134584-c1606880-cdf3-11eb-9f6f-bec94db45f16.JPG)
   - classic Ports to know 
     - ![classicport](https://user-images.githubusercontent.com/22860697/122134776-2320d280-cdf4-11eb-83a6-d5ffb0f7c1c7.JPG)
+- EC2 Instances Purchasing Options:
+  - On-demand Instances : short workload, predictable pricing
+  - ![ondemainprice](https://user-images.githubusercontent.com/22860697/122138926-a47c6300-cdfc-11eb-9a80-70f8b40bb97c.JPG)
+
+  - reserved: (minimum 1 year)
+    - reserved instances : long workloads 
+    - convertible reserverd Instances : Long workloads with flexible instance
+    - schedule reserved instances: example - every thursday between 3 adn 6pm 
+    - ![resinstanceprice](https://user-images.githubusercontent.com/22860697/122139140-2a001300-cdfd-11eb-899e-98508e2f7f09.JPG)
+
+  - spot instances: short wrkloads, cheap can lose instance (less reliable)
+  - ![spotinstanceprice](https://user-images.githubusercontent.com/22860697/122139279-7e0af780-cdfd-11eb-8a0b-0312b53166e4.JPG)
+  - dedicated Hosts: Book an entire Physical server, control instance placement
+  - ![dedicateinstance](https://user-images.githubusercontent.com/22860697/122139460-e8bc3300-cdfd-11eb-85c4-793707e5436f.JPG)
+  - dedicate  Instance:
+    - instances running on hardware that dedicated to you 
+    - may share hardware with other instances in same account 
+    - no control over instance placement (can move hardware after STop/ Start)
+    - ![comparededicate](https://user-images.githubusercontent.com/22860697/122139707-6d0eb600-cdfe-11eb-89c3-2f700872111c.JPG)
+   - ![example](https://user-images.githubusercontent.com/22860697/122139869-cb3b9900-cdfe-11eb-8c25-1dc823f1e82f.JPG)
+ 
 
 
         
