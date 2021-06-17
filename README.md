@@ -260,8 +260,29 @@
    - ![example](https://user-images.githubusercontent.com/22860697/122139869-cb3b9900-cdfe-11eb-8c25-1dc823f1e82f.JPG)
 - Share REsponsibility Model for EC2
 - ![compareresponse](https://user-images.githubusercontent.com/22860697/122140145-574dc080-cdff-11eb-906b-9f6419a92127.JPG)
- 
-
+- What is an EBS volume?
+  - An EBS (Elastic Block STore) Volume is a network drive you can attach to your instances while they run 
+  - It allows your instances to persist data, even after their termination 
+  - They can only be mounted to one instance at a time (at the CCP level) , CCP: Certified Cloud Practitioner - onw EBS can be only mounted to one EC2 instance Associate level (Solutions Architect, DEveloper, SysOps ):"Multi-attach" Feature for some EBS
+  - they are bound to a specific availability Zone
+  - Analogy : Think of them as a Network USB stick
+  - free tier: 30 GB of free EBS Storage of type General Purpose (SSD) or  Magnetic per MOnth
+- EBS Volume:
+  - It's a network drive:
+    - it uses the network to communicate the instance, which means there might be a bit of latency 
+    - it can be detached from an EC2 instance and attached to another one quickly 
+  - It's Locked to an Availability Zone (AZ)
+    - An EBS volume in Us-east-1 a cannot be attached to us-east-1b
+    - to move a volume across, you first need to snapshot it
+  - Have a provisioned capacity(size in GbS, and IOPS)
+    - you get billed for all the provisioned capacity
+    - you can increase the capacity of the drive over time
+  - EBS delete on termination attribute
+    - controls the EBS behaviour when an EC2 instace terminates
+      - by default, the root EBs volume is delleted (attribute enabled)
+      - by default, any other attached EBS volume is not Deleled ( Attribute Disable)
+    - this can be controlled by The AWS console/ AWS CLI
+    - use case : preserve root volume when instance is terminated
 
         
     
