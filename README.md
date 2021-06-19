@@ -283,6 +283,10 @@
       - by default, any other attached EBS volume is not Deleled ( Attribute Disable)
     - this can be controlled by The AWS console/ AWS CLI
     - use case : preserve root volume when instance is terminated
+- EBS Snapshots
+    - make a backup of your EBS volume at a point in time
+    - Nopt neccessary to detach volume to do snapshot, but recommended
+    - can copy snapshots across AZ or REgions
 
         
     
