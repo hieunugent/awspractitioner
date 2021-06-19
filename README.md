@@ -287,6 +287,7 @@
     - make a backup of your EBS volume at a point in time
     - Nopt neccessary to detach volume to do snapshot, but recommended
     - can copy snapshots across AZ or REgions
+    - ![snapshot](https://user-images.githubusercontent.com/22860697/122657067-f7179100-d114-11eb-9667-a2bbd07098ec.JPG)
 
         
     
