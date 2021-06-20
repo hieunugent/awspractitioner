@@ -311,3 +311,11 @@
     - can be run on a schedule (weekly, or whenever packages are updated, etc..)
     - free service (only pay for underlying resources )
     - ![buildimageAMI](https://user-images.githubusercontent.com/22860697/122663922-ceae8780-d152-11eb-8570-c7a923ee2fec.JPG)
+- EC2 Instance Store
+  - EBS volume are network drives with good but "limited" Performance
+  - If you need a high-performance hardware disk , use EC2 Intance Store
+  - Better I/O performance
+  - Ec2 Instance Store lose theor storage if they are stopped (ephemeral)
+  - Good for buffer/cache/scatch data/temporary content
+  - risk of data loss if hardware fail
+  - Backups and Replication are your RESPONSIBLE
