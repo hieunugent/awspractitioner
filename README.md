@@ -288,6 +288,26 @@
     - Nopt neccessary to detach volume to do snapshot, but recommended
     - can copy snapshots across AZ or REgions
     - ![snapshot](https://user-images.githubusercontent.com/22860697/122657067-f7179100-d114-11eb-9667-a2bbd07098ec.JPG)
+- AMI Overview:
+    - AMI = Amazon Machine Image
+    - AMI are a customization of an EC2 instance
+      - you add your own software, configuration, operation system, monitoring
+      - Faster boot / configuration time because all your software is pre-packaged 
+    - AMI are built for a specific region and can be copied across regions
+    - you can launch EC2 instance from :
+      - A public AMI: AWS provided
+      - your own AMI: you make and maintain them yourself
+      - An AWS Marketplace AMI: an AMI someone else made (and potentially sells)
+- AMI Process (from an EC2 instance)
+    - Start an EC2 instance and customize it 
+    - Stop the instance for data integrity
+    - Build an AMI - This will also create EBS snapshots 
+    - launch instances from other AMIs
+    - ![AMIprocess](https://user-images.githubusercontent.com/22860697/122663544-0a941d80-d150-11eb-9dfb-8ba212c05787.JPG)
 
-        
-    
+- EC2 Image Builder
+    - Used to automate the creation of Virtual Machines or container images
+    - => Automate the creation , maintain , validate and test EC2 AMIs
+    - can be run on a schedule (weekly, or whenever packages are updated, etc..)
+    - free service (only pay for underlying resources )
+    - ![buildimageAMI](https://user-images.githubusercontent.com/22860697/122663922-ceae8780-d152-11eb-8570-c7a923ee2fec.JPG)
