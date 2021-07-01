@@ -324,5 +324,12 @@
   - EFS works with linux EC2 intances in multi-AZ
   - highly available , scalable expensice (3x gp2, pay per use, no capacity planning![efs](https://user-images.githubusercontent.com/22860697/124177256-d3354300-da64-11eb-9364-ba930e89edfd.JPG)
 - EBS vs EFS![EBSvsEFS](https://user-images.githubusercontent.com/22860697/124200686-d3e0d000-da8a-11eb-9a2c-79a7f02ecb41.JPG)
+- EFS infrequent Access (EFS-IA)
+  - storage class that is cost optimized for file not accessed every day
+  - up to 92% lower cost compared to EFS Standard
+  - EFS will automatically move your files to EFS-IA base on the last time they were accessed
+  - Enable EFS-IA with a lifeCycle Policy
+  - Example: move files that are not accessed for 60 days to EFS-IA
+  - Transparent to applications accessing EFS![EFS-IA](https://user-images.githubusercontent.com/22860697/124201735-97fb3a00-da8d-11eb-9b7d-d9db66406976.JPG)
 
   
