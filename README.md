@@ -319,3 +319,7 @@
   - Good for buffer/cache/scatch data/temporary content
   - risk of data loss if hardware fail
   - Backups and Replication are your RESPONSIBLE
+- EFS -Elastic File SYstems
+  - Managed NFS that can be mounted on 100s of EC2
+  - EFS works with linux EC2 intances in multi-AZ
+  - highly available , scalable expensice (3x gp2, pay per use, no capacity planning![efs](https://user-images.githubusercontent.com/22860697/124177256-d3354300-da64-11eb-9364-ba930e89edfd.JPG)
