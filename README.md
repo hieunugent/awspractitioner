@@ -323,3 +323,6 @@
   - Managed NFS that can be mounted on 100s of EC2
   - EFS works with linux EC2 intances in multi-AZ
   - highly available , scalable expensice (3x gp2, pay per use, no capacity planning![efs](https://user-images.githubusercontent.com/22860697/124177256-d3354300-da64-11eb-9364-ba930e89edfd.JPG)
+- EBS vs EFS![EBSvsEFS](https://user-images.githubusercontent.com/22860697/124200686-d3e0d000-da8a-11eb-9a2c-79a7f02ecb41.JPG)
+
+  
