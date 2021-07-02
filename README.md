@@ -331,5 +331,7 @@
   - Enable EFS-IA with a lifeCycle Policy
   - Example: move files that are not accessed for 60 days to EFS-IA
   - Transparent to applications accessing EFS![EFS-IA](https://user-images.githubusercontent.com/22860697/124201735-97fb3a00-da8d-11eb-9b7d-d9db66406976.JPG)
+- Share Responsibility Model for EC2 storage
+  ![resposibleEC2Storage](https://user-images.githubusercontent.com/22860697/124215173-60e65200-daa8-11eb-8999-13227acd757c.JPG)
 
   
