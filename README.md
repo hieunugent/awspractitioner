@@ -322,7 +322,8 @@
 - EFS -Elastic File SYstems
   - Managed NFS that can be mounted on 100s of EC2
   - EFS works with linux EC2 intances in multi-AZ
-  - highly available , scalable expensice (3x gp2, pay per use, no capacity planning![efs](https://user-images.githubusercontent.com/22860697/124177256-d3354300-da64-11eb-9364-ba930e89edfd.JPG)
+  - highly available , scalable expensice (3x gp2, pay per use, no capacity planning
+  - ![efs](https://user-images.githubusercontent.com/22860697/124177256-d3354300-da64-11eb-9364-ba930e89edfd.JPG)
 - EBS vs EFS![EBSvsEFS](https://user-images.githubusercontent.com/22860697/124200686-d3e0d000-da8a-11eb-9a2c-79a7f02ecb41.JPG)
 - EFS infrequent Access (EFS-IA)
   - storage class that is cost optimized for file not accessed every day
@@ -330,16 +331,17 @@
   - EFS will automatically move your files to EFS-IA base on the last time they were accessed
   - Enable EFS-IA with a lifeCycle Policy
   - Example: move files that are not accessed for 60 days to EFS-IA
-  - Transparent to applications accessing EFS![EFS-IA](https://user-images.githubusercontent.com/22860697/124201735-97fb3a00-da8d-11eb-9b7d-d9db66406976.JPG)
+  - Transparent to applications accessing EFS
+  - ![EFS-IA](https://user-images.githubusercontent.com/22860697/124201735-97fb3a00-da8d-11eb-9b7d-d9db66406976.JPG)
 - Share Responsibility Model for EC2 storage
-  ![resposibleEC2Storage](https://user-images.githubusercontent.com/22860697/124215173-60e65200-daa8-11eb-8999-13227acd757c.JPG)
+   -  ![resposibleEC2Storage](https://user-images.githubusercontent.com/22860697/124215173-60e65200-daa8-11eb-8999-13227acd757c.JPG)
 - Amazon Fsx for window file server
   - a fully mananged highly reliable and scalable window native shared file system
   - built on windowe file server
   - supports SMB protocol andwindow NTFS
   - integrated with Microsoft Active Directory
   - Can be Accessed From AWS or your on premise infrastructure
-  ![fsxwin](https://user-images.githubusercontent.com/22860697/124216305-cdfae700-daaa-11eb-9f8c-9527b9ed8bbc.JPG)
+  - ![fsxwin](https://user-images.githubusercontent.com/22860697/124216305-cdfae700-daaa-11eb-9f8c-9527b9ed8bbc.JPG)
 - Amazpm FSx for Lustre
   - A fully managed high performance , scalable file storage for high Performance Computing (HPC)
   - the name Lustre is derived form Linux and cluster
