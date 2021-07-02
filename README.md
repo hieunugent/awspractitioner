@@ -333,5 +333,18 @@
   - Transparent to applications accessing EFS![EFS-IA](https://user-images.githubusercontent.com/22860697/124201735-97fb3a00-da8d-11eb-9b7d-d9db66406976.JPG)
 - Share Responsibility Model for EC2 storage
   ![resposibleEC2Storage](https://user-images.githubusercontent.com/22860697/124215173-60e65200-daa8-11eb-8999-13227acd757c.JPG)
+- Amazon Fsx for window file server
+  - a fully mananged highly reliable and scalable window native shared file system
+  - built on windowe file server
+  - supports SMB protocol andwindow NTFS
+  - integrated with Microsoft Active Directory
+  - Can be Accessed From AWS or your on premise infrastructure
+  ![fsxwin](https://user-images.githubusercontent.com/22860697/124216305-cdfae700-daaa-11eb-9f8c-9527b9ed8bbc.JPG)
+- Amazpm FSx for Lustre
+  - A fully managed high performance , scalable file storage for high Performance Computing (HPC)
+  - the name Lustre is derived form Linux and cluster
+  - Machine learning , Analytic video procesing , Finacial modeling, ...
+  - Scale up to 100s GB/s, Millionss of IOPs, sub-ms Latencies
+  - ![lustre](https://user-images.githubusercontent.com/22860697/124216905-12d34d80-daac-11eb-90ee-fe2acc4a4177.JPG)
 
   
