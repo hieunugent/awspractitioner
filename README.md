@@ -1,4 +1,4 @@
-# awspractitioner
+# AWS Practitioner
 ## what is cloud computing?
 - what is cloud computing 
   - cloud computing is the on-demand delivery of compute power,database storage, application, and other IT resources.
