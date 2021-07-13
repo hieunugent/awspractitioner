@@ -336,7 +336,7 @@
   - ![EFS-IA](https://user-images.githubusercontent.com/22860697/124201735-97fb3a00-da8d-11eb-9b7d-d9db66406976.JPG)
 - Share Responsibility Model for EC2 storage
    -  ![resposibleEC2Storage](https://user-images.githubusercontent.com/22860697/124215173-60e65200-daa8-11eb-8999-13227acd757c.JPG)
-- Amazon Fsx for window file server
+- Amazon Fsx for window file serve
   - a fully mananged highly reliable and scalable window native shared file system
   - built on windowe file server
   - supports SMB protocol andwindow NTFS
@@ -349,5 +349,27 @@
   - Machine learning , Analytic video procesing , Finacial modeling, ...
   - Scale up to 100s GB/s, Millionss of IOPs, sub-ms Latencies
   - ![lustre](https://user-images.githubusercontent.com/22860697/124216905-12d34d80-daac-11eb-90ee-fe2acc4a4177.JPG)
-
-  
+- High Availability Scalability, Elasticity 
+  - scalability means that an application / systems can handle greater loads by adapting 
+  - there are two kinds of scalability:
+    - Vertical Scalability
+    - Horizontal Scalabity(+ elasticity)
+  - Scalability is linked but differeant to high Availability
+- Vertivcal Scalabil;ity:
+  - vertical scalability means increasing the size of the instance
+  - for example your application runs on a t2.micro
+  - scaling that application vvertically means running ity on a t2.large
+  - vertical scalability  is very common for non distributed systemsuch as a database
+  - there usually a limmit to how much you can vertically scale
+- horizontal scalability :
+  - means increasing the number of instances / systems for your application  
+  - horizontal scaling implies distributed systems
+  - this is very common for web application modern application 
+  - its is easy to horizontalliy scale thank teh cloud offering such as AMazon EC2
+- high Availability 
+  - high available usually goes hand in hand with horizontal scaling 
+  - high available means running your application /system in at least 2 availability zones
+  - the goal of the high availability is to survive a data center loss
+- scalability : ability to accommodate a larger load by making the hardware stronger scale up or by adding nodes sacle out
+- elasicity once a system is scalable elasticity means that there will be some autoscaling so that the system can scale beesase on the load. this is cloud friendly, pay per use , match demand , optimize costs
+- Agility : not related to scalability - distractor new It resources are only a click away, which means that you reduce the time to make those resource available to your developers from weeks to just minute
