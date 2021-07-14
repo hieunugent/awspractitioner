@@ -373,3 +373,16 @@
 - scalability : ability to accommodate a larger load by making the hardware stronger scale up or by adding nodes sacle out
 - elasicity once a system is scalable elasticity means that there will be some autoscaling so that the system can scale beesase on the load. this is cloud friendly, pay per use , match demand , optimize costs
 - Agility : not related to scalability - distractor new It resources are only a click away, which means that you reduce the time to make those resource available to your developers from weeks to just minute
+- Elastic load balancing ELB Overview:
+- what is load balancing?
+  - load balanced ar3e servers that forward internet traffic to multiple server(EC2 instances) downstream
+  - ![loadbalancer](https://user-images.githubusercontent.com/22860697/125679229-01ff265e-ae89-4432-8530-960cad864b26.JPG)
+- why use a load balancer?
+  - spread load across multiple downstream instances
+  - expose a single point of access DNS to your application
+  - seamlessly handle failures of downstream instances
+  - do regular health checks to your instance
+  - provide SSL termination (HTTPS) for your websites
+  - high availability across zones
+
+  
