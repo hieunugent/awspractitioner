@@ -384,5 +384,14 @@
   - do regular health checks to your instance
   - provide SSL termination (HTTPS) for your websites
   - high availability across zones
-
+- why use a ELASTIC LOAD BALANCER?
+  - An ELB is a managerd load balancer
+    - AWS guarantees that it will be working 
+    - AWS takes caer of upgrades , maintenance hih availabily
+    - AWS provides only a few configuration knobs
+  - it cost less to setup your ownn load balancer but it will be a lot more effeor on your end (maintenance , integrations)
+  - 3 kinds of load balanceer offered by AWS 
+    - Application load balancer ( HTTP/HTTPS only) layer 7
+    - Network load Balancer ( ultra high performance allow for TCP) layer 4
+    - Classic load Balancer ( SLowly retiring) layer 4 and 7
   
