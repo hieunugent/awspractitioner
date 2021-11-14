@@ -404,4 +404,23 @@
   - ![GWLB](https://user-images.githubusercontent.com/22860697/125682151-2f3e5a79-7589-46fc-9ae1-8f60616d9c8f.JPG)
   - The appliance providers and consumers can reside in different AWS accounts and VPCs. GWLBe enables consolidation of appliances, consistency of security policies, reduction in operator errors, and seamless inspection of traffic without having to change the traffic source or destination and requiring NAT translations.
   - To ensure high availability, you can use the advanced routing capabilities of GWLB to direct traffic to only healthy appliances, and reroute traffic when an appliance becomes unhealthy due to faults. GWLB works across VPCs and user accounts, giving you the option to centralize virtual appliance fleets. The ability to use GWLB across user accounts enables partners to offer their virtual appliances as an AWS-hosted service that customers access from their VPCs. This reduces complexity and improves security.
-  - ASG
+- Auto scaling Group
+  - in real life the load on your website and application can change
+  - in the cloud, you can create and get rid of the server very quickly 
+  - the goal pf an Auto Scaling Group is to:
+    - Scale out (add ES2 intance ) to match an increaseed load
+    - Scale in remove ES2 intances to match a decreased load
+    - Ensure we have a minimum and a maximum number of machines running 
+    - Automatically reggister new instance to load balancer
+    - replace unhealthy instance
+  - cost Saving : only run at an optimal capacity (principle of the cloud)
+- Auto Scaling groups- scaling strategies
+  - Manual Scaling 
+  - Dynamic Scaling
+      - Simple/Step Scaling 
+      - Target Tracking Scaling
+      - Scheduled Scaling
+  - Predict Scaling 
+      - uses Machine Learning to predict future
+      - Automatically provisions the right number of EC2 instance in advance
+  - Usedful when your load has predictable time based patterns
