@@ -404,3 +404,4 @@
   - ![GWLB](https://user-images.githubusercontent.com/22860697/125682151-2f3e5a79-7589-46fc-9ae1-8f60616d9c8f.JPG)
   - The appliance providers and consumers can reside in different AWS accounts and VPCs. GWLBe enables consolidation of appliances, consistency of security policies, reduction in operator errors, and seamless inspection of traffic without having to change the traffic source or destination and requiring NAT translations.
   - To ensure high availability, you can use the advanced routing capabilities of GWLB to direct traffic to only healthy appliances, and reroute traffic when an appliance becomes unhealthy due to faults. GWLB works across VPCs and user accounts, giving you the option to centralize virtual appliance fleets. The ability to use GWLB across user accounts enables partners to offer their virtual appliances as an AWS-hosted service that customers access from their VPCs. This reduces complexity and improves security.
+  - ASG
