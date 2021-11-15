@@ -424,3 +424,26 @@
       - uses Machine Learning to predict future
       - Automatically provisions the right number of EC2 instance in advance
   - Usedful when your load has predictable time based patterns
+- Amazon S3 
+  - backup adn storage 
+  - disaster Recovery
+  - archive
+  - Hybrid cloud Storage
+  - Application hosting 
+  - Media Hosting 
+  - Data lakes and big data analysis
+  - Software Delivery
+  - Static website
+  - S3 bucket is unique and letter small case 
+  - Object contain boday and Metadata, Tags, Version ID
+  -S3 Security
+    - USer based:
+      - IAM policies which APi calll should be allowed for specific user from IAM console
+    - Resource Base:
+      - Bucket Policies - bucket wide rules from  the S3 console - allow cross account
+      - Object Access Control List (ACL) - finer granin 
+      - Bucket ACL less common 
+    - Note: An IAM principal can access an S23 object if 
+      - The user IAM permission allow it OR the resource policy ALLOWS it
+      - ANd There no Explicit DENY\
+    - Encryption: encypt Object in Amazon S3 using encryption keys 
