@@ -445,5 +445,6 @@
       - Bucket ACL less common 
     - Note: An IAM principal can access an S23 object if 
       - The user IAM permission allow it OR the resource policy ALLOWS it
-      - ANd There no Explicit DENY\
+      - AND There no Explicit DENY
     - Encryption: encypt Object in Amazon S3 using encryption keys 
+    - public Access Use Bucket Policy will allow Anonymous to access your file
