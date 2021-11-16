@@ -448,3 +448,20 @@
       - AND There no Explicit DENY
     - Encryption: encypt Object in Amazon S3 using encryption keys 
     - public Access Use Bucket Policy will allow Anonymous to access your file
+    - IAM User can access S3 bucket
+    - Cross Account Access Use Bucket Policy
+  - S3 Bucket Policies
+  ```
+  Json Based policies
+      - recource : bucket adn objects
+      - action set of API Allow or deny
+      - principle the account or user to apply the policy to
+  ```
+    - Use S3 bucket for policy to 
+      - Grnat public access to the bucket
+      - Force object to be encrypted at upload 
+      - Grant access to another account crosss account
+    - bucket setting for block public Access
+      - these setting were created to prevent company data leaks
+      - if you know your bucket should never be public , leave these on 
+      - can be set at the account level
