@@ -457,7 +457,7 @@
       - action set of API Allow or deny
       - principle the account or user to apply the policy to
   ```
-    - Use S3 bucket for policy to 
+    - Use S3 bucket for policy to
       - Grnat public access to the bucket
       - Force object to be encrypted at upload 
       - Grant access to another account crosss account
@@ -465,3 +465,32 @@
       - these setting were created to prevent company data leaks
       - if you know your bucket should never be public , leave these on 
       - can be set at the account level
+ - S3 Website
+    - can host static website and have them accessible on teh www
+    - the website uRL will be
+      - bucket-name s3-website- AWS-region.amazonaws.com
+    - if you get a 403 error, make sure the bucket policy allows public reads
+- S3 Versioning 
+    - You can version your files in Amazon S3
+    - it is enabled at the bucket level
+    - same key overite will increment the version 1,2,3
+    - it is the best practice your buckets
+      - protect agiants unintended deletes - ability to restore the version 
+      - easy roll back to previous verison 
+    - NOtes:
+      - any file that is not versioned prior to enableing versioning will have version null
+      - Suspending verisoning does not delete the previous version  
+- S3 Access Logs
+   - for audit purpose, you may want to log all access to s3 bucket
+   - any  request made to S3 from any account authoried or denied will be logged into another S3 bucket
+   - that data can be anlyzed using data analysis tools
+   - very helpful to come down to the root  cause of an issue or audit usage, view suspicous  patern, etc
+- S3 Replication 
+   - must enable versioning in source and destination 
+   - Cross region Replication 
+   - same regiob replication
+   - buckets can be in different accounts
+   - copying is asynchronous
+   - Must give proper IAM permission to S3
+   - CRR - USe cases; complicance , lower lattency access replication across accounts
+   - SRR -USE cases log aggregation live replication between production an test account 
