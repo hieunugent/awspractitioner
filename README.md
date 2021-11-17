@@ -494,3 +494,43 @@
    - Must give proper IAM permission to S3
    - CRR - USe cases; complicance , lower lattency access replication across accounts
    - SRR -USE cases log aggregation live replication between production an test account 
+- S3 Storage Classes
+   - Amazon S3 Standard = Generral Purpose
+      - 99.99 availability
+      - user for frequently accessed data
+      - low latency and high throughput
+      - sustain 2 concurrent facility failure
+      - usecase bigdata analysitic mobile and gaming applications, content distribution
+   - Amazon S3 Standard infrequent Access 
+      - Suitable for data that is less frequently accessed, but requires repid access when needed
+      - 99.9% Availability
+      - lower cost compared to amazon s3 standard but retrieval fee
+      - sustain 2 concurrent facility  failures
+      - use cases : As a data store for disaste recovery backups
+   - Amazon S3 One Zone infrequent Access
+      - same as IA but data is stored in a single AZ
+      - 99.5% availability
+      - low latency and high throughput performance
+      - lower cost compared to S3-IA by 20%
+      - use cases: store secondary backup copies of on-premise data or storing data you can recreate 
+   - Amazon S3 Intelligent Tiering 
+      - 99.9% Availability 
+      - same low latency and high thorughput performance of s3 standard
+      - cost optimized by automaticallu moving object  between two access tiers based on changing access patterns
+          - frequent access
+          - infrequent access
+      - resilient against events that imapct an entire avalibility ZOne
+   - Amazon Glacier
+      - low cost object storage meant for archiving / backup 
+      - data is retainded for longer term 
+      - various retrieval option of time fee for retrievel 
+   - Amazon Glacier Deep Archive
+   - AMazon S3 Reduced Redundancy Storage
+   - Durability:
+      - high durability of object across multiple AZ
+      - if you store 10milion object on Amazon S3  you can on average expect to incur  a loss of a single object once every 10k years
+      - same for all storage class 
+   - Availablity
+      - Measures how readily available a service is 
+      - S3 standard has 99.99% availability, which means it will not be available 53 min a year
+      - varies depending on storage clasie
