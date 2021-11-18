@@ -524,7 +524,16 @@
       - low cost object storage meant for archiving / backup 
       - data is retainded for longer term 
       - various retrieval option of time fee for retrievel 
+      - Expedited 1to 5 min 
+      - standard 3 to 5 min 
+      - Bulk 5 to 12 min
    - Amazon Glacier Deep Archive
+       - low cost object storage meant for archiving / backup 
+      - data is retainded for longer term 
+      - various retrieval option of time fee for retrievel 
+      - cheapest
+      - standard 12 hour
+      - Bulk 48 hours
    - AMazon S3 Reduced Redundancy Storage
    - Durability:
       - high durability of object across multiple AZ
@@ -533,4 +542,99 @@
    - Availablity
       - Measures how readily available a service is 
       - S3 standard has 99.99% availability, which means it will not be available 53 min a year
-      - varies depending on storage clasie
+      - varies depending on storage class
+- S3 Moving between storage class
+  - you can transion objects between storage classes
+  - moving object cna be automated using a lifecycle aonfiguration
+- S3 Object Lock
+  - Adopt a WORM model
+  - lock aan object version deleting for a specified amount of time
+- Glacier Vailt lock 
+  - Adopt a WORM model 
+  - lock the policy for  future edits can no longer be changed
+  - helpful for  compliance and data retention
+- S3 encrytion
+  - no Encryption
+  - Server- side encryption server will encryp the file after upload
+  - client-side encryption client will encrypt file befoere upload 
+- Share Responsibility model for S3 
+  - Server
+  - Infrastructure(globle security, durability, availability, sustain concurrent loss of data in two facilities
+  - configuration an vulnerability analysis 
+  - compliance validation 
+  - User
+  - S3 versioning 
+  - S3 Bucket policies
+  - S3 Replication 
+  - logging adn nmonitoring 
+  - S3 storange classes
+  - Data encruption at rest and in transit
+- AWS Snow Family 
+  - high secure portable device to collect and process data at the edge and mirate data in and out of AWS
+  - Data mirations with AWS snow Family because we want it fast, for limited connectivity, bandwidth network cost share bandwidth connection stability
+  - offline devices to perform fata migrations, if it take more than a week to tranfer over the network user SNOWball device
+   - snowball edge
+      - physical data transport solution move Tbs PBs of data in or out AWS
+      - Alternative to moving data over the network and paying network fees
+      - pay per data transfer job
+      - provide block storage and Amazon S3- compatible object storage 
+      - Snowball Edge storage optimized
+        - 80Tb of HDDcap for block  volume and S3  compatible object storage
+      - Snowball Edge compute optimized
+        - 42 Tb of HDD capavity for bloc volume and S3 compatible objec storage
+      - use case: large dta cloud miragtions, Dc decommisstion, disaster recovery
+  - Snow coin
+      - small portable computing anywhererugged adn secure withstadns harsh environments
+      - light 4.5pounds
+      - divice user for edge computing storage and data tranfer
+      - 8TBS of usable storage
+      - use snowcone whre snowball does not fir 
+      - mus provide your own battery and cable 
+      - can be sent back to AWs offline or connect it to internet and use AWS Datasync to send data
+  - Snowmoblie
+      - stransfer exabyte of data 
+      - Each Snowmoble has 100pb of capacity
+      - High security temperature controll Gps, 24/7 video surveillance
+      - > 10Pbs better then snow ball!
+      - [snowball](https://user-images.githubusercontent.com/22860697/142356541-c315c87d-9817-458e-9f59-40297af10cb0.JPG)
+  - USage process snow family 
+      - request snow  ball ddevices form the Aws console for deliovery 
+      - instll tthe snow vball client / AWs ophub on your server
+      - connect the snowball to your servers and copy file using the client 
+      - ship back teh device when you are done to AWS facility
+      - dat will be loaded into an S3 bucket 
+      - snowball is completely wiped
+ - What is edge computing 
+      - process data whiel its being creted on an  edge location 
+          - A truck on the road a ship on teh sea, a mining station underground 
+      - these location may have 
+          - limited no internet access
+          - limited   no easy access to computing power
+      - we setip a snowball egde snowcone decvide to do edge computing
+      - use case of edge computing; 
+        - preprocess data
+        - machine learing at teh edegde
+        - transcodeing meadia streams
+      - eventually we can ship bacj teh device to AWS 
+      - Snow family Edge computiong 
+        - snowcone
+          - 2cpus, 4gb of memory wire or wireless access
+          - USB-C power using a cord or the optional battery
+        - Snowball Edge - compute optimiaed
+          - 52 vCPU 208 GiB of Ram
+          - optional GPU
+          - 42TB usable storage
+        - Snow ball Ege - storage Optimized
+          - up to 40 vCPUs, 80 GiB of Ram
+          - object stoage clustering available
+        - all: can run EC@ instance adn AWS lambda function (sung AWS iot Greengrass
+        - Longterm deployment options 1 and 3 years discount pricing 
+    - AWS OpsHub
+      - historically to use snow Family devicel, you needed a CLI 
+      - today you can use AWS OpsHub to manage your snow Family Device
+        - Unlocking and configuring single or clustered devices
+        - tranfering the file
+        - launching an managing instances running on snow family devices
+        - Monitor device metric (storage capcity, active instances on your device)
+        - Launch compatible AWS service on your devices  
+        - 
