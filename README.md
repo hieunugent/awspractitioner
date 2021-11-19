@@ -658,7 +658,31 @@
       - Tape dateway
 - Sumary AWS S3:
     - ![sumary S3](https://user-images.githubusercontent.com/22860697/142550910-102ccfae-2707-476e-8881-7cb8fb7120f2.JPG)
-## Databses and Analytics
-- Database intro;
-  
-
+## Databases and Analytics
+- Databases introduction
+  - Storing Data on disk (EFS, EBS, EC2 instance store S3) can have its limits
+  - sometimes, you want yo store data in a database ..
+  - you can structure the data
+  - you build indexes to effciently query search through the data
+  - you define relationships between your datasets
+  - databases are oprimized for a purpose and come with different features, shapes and constraints
+- Relational databases
+  - looks just like Excel spreadsheets, with links between them 
+  - Can use the SQL language to perform queries lookups
+  ![relationalDatabase](https://user-images.githubusercontent.com/22860697/142556785-9525609a-6e31-430c-b139-497b90799a78.JPG)
+- NOSQL database
+  - no relational databases
+  - are purpose built for specific  data models and have flexible schemas for building modern application
+  - benefits:
+    - Flexibility : easy to evolve data model
+    - scalebility designed to scale out but using distribute clusters
+    - high peformance : optimized for a specific data model
+    - high functional : types optimized for the data  model
+- RESponsibility:
+   - Aws offer use to manage different database
+   - benefit include:
+      - Quick provisioning  high availability varticle and horizontaal Scaling 
+      - Automated Backup and restore , Operations Upagrades
+      - Operating System patching is handle by AWS
+      - monitoring alering 
+    - note : many databases technologies could be run on EC2 but you must handle yourself the resilency backup high availibility fault tolerance scaling... 
