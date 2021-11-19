@@ -637,4 +637,26 @@
         - launching an managing instances running on snow family devices
         - Monitor device metric (storage capcity, active instances on your device)
         - Launch compatible AWS service on your devices  
-        - 
+- Hybrid cloud for storage
+    - Aws is pushing for hybrid cloud
+        - part of your infrastructure is on-premises
+        - part of your infrastructure is on the cloud
+    - This can be due to
+        - Long Cloud migration 
+        - Security requirements
+        - Compliance Requirements
+        - It stategy 
+    - S3 is a proprietary storage technology unlike EFS/ NFS so how do you expose the S3 Data on-premise
+    - ![awsStoragecloudnative](https://user-images.githubusercontent.com/22860697/142546082-b0b611c0-753c-44f7-bd26-0166c15f706a.JPG)
+- AWS storage GateWay
+    - Bridge between on premise data and cloud data in S3 
+    - hybrid storage service to allow on premise to seamlessly use the AWS cloud
+    - use cases disaster recovery backup adn restore tiered stoage 
+    - type of storage gateway 
+      - file Gateway
+      - volume Gateway
+      - Tape dateway
+- Sumary AWS S3:
+    - ![sumary S3](https://user-images.githubusercontent.com/22860697/142550910-102ccfae-2707-476e-8881-7cb8fb7120f2.JPG)
+
+
