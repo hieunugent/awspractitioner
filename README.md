@@ -686,3 +686,24 @@
       - Operating System patching is handle by AWS
       - monitoring alering 
     - note : many databases technologies could be run on EC2 but you must handle yourself the resilency backup high availibility fault tolerance scaling... 
+- AWS RDS overview
+  - RDS stand for Relational Database service
+  - it's a ,amagerd DB service for DB use SQL as a query language
+  - it allows you to create databases in the cloud that are managed by AWS 
+    - Postgres
+    - MySQL
+    - MariaDb
+    - Oracle 
+    - Microsoft SQL Server
+    - Aurora(AWS Proprietary Database)
+- Advantage over using RDS versus deploying DB on EC2
+  - RDS is mananger service:
+    - Automated provisioning, OS patching 
+    - continous backups and restore to specific timestamp (Point in Time Restore)!
+    - Monitoring Dashboards
+    - Read Replicas for improved red performance
+    - Muilti AZ setup for DR (Disaster Recovery)
+    - Maintenance WIndow for upgrades
+    - Scaling Capability (vertical and horizontal)
+    - Storage backed by EBS (gp2 or io I)
+   - But you can't SSH into your instances
