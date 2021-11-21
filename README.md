@@ -707,3 +707,37 @@
     - Scaling Capability (vertical and horizontal)
     - Storage backed by EBS (gp2 or io I)
    - But you can't SSH into your instances
+ - RDS solution Architecture:
+    ![RDS](https://user-images.githubusercontent.com/22860697/142744498-216809fd-5eea-4e73-8c33-05d43801e5b3.JPG)
+- Amazon Aurora
+   - Aurora is proprietary technology form AWS not open sourced
+   - PostgreSQl and MuSQL are both supported as Aurora DB
+   - Aurora is AWS cloud optimized and claims 5X performance improvement over MySQL on RDS , over 3x the performanceof Postgres on RDS
+   - Aurora storage automatically grows in increments of 10GB, Up to 64 TB
+   - Autora cosrt more than RDS (20% more) - but us more efficent
+   - Not in the free tier
+- RDS deployments: Read Replicas. Multi-AZ
+  - read REplicas:
+    - Scale the read workload of your DB
+    - can create up to 5 Read Replicas
+    - Data is only written to main DB
+    - ![ReadReplicas](https://user-images.githubusercontent.com/22860697/142744894-a449e367-da53-4491-8865-3a1fa1f964f1.JPG)
+  - Multi_AZ:
+    - Failover in case of AZ outage (high availability)
+    - ![multiAZ](https://user-images.githubusercontent.com/22860697/142745008-3bbe600e-5b72-4b69-ac19-47befce1b843.JPG)
+
+  - Multi - Region:
+    -  read replicas:
+    -  set up disaster recovery in case of region issue
+    -  local performance for globle read
+    -  replication cost
+    -  ![multi region](https://user-images.githubusercontent.com/22860697/142745037-2a332974-5f7b-481d-8fbb-369e3a8c55a3.JPG)
+- Amazon ElasticCache Overview
+  - The same way RDS is to get managed Relational Databases
+  - ElastiCache is to get managed Redis or Memcached
+  - Caches are in memoru databses with high  performance low latency
+  - helps reduce load off data bases for read intensive workloads
+  - Aws take case of OS maintenance patching optimization setup, configuration , monitoring failure recovery and backups 
+  - solution Architecture _cached 
+  - ![Architecture](https://user-images.githubusercontent.com/22860697/142745177-2e854d51-bb12-4567-982f-243b92b12264.JPG)
+  
