@@ -758,5 +758,9 @@
   - Secure highly scalable and highly available 
   - Differance with ElastiCache at CCP leve: DAX is only used for and is integrated with DynamoDb whuile ElastiCache Can be used for other databases
   - ![DAX](https://user-images.githubusercontent.com/22860697/142745836-aef5872e-fab3-47f0-935a-918ae93494ba.JPG)
+- DynamoDB- Global table
+  - Make a dynamo Db table accessible with low latency in multiple region 
+  - active active replication (read/write to any Aws region )
+  - ![dynamoGlolble](https://user-images.githubusercontent.com/22860697/142747852-9e712691-3186-4f9d-9ff2-4eac260727c9.JPG)
 
     
