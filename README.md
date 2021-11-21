@@ -762,5 +762,5 @@
   - Make a dynamo Db table accessible with low latency in multiple region 
   - active active replication (read/write to any Aws region )
   - ![dynamoGlolble](https://user-images.githubusercontent.com/22860697/142747852-9e712691-3186-4f9d-9ff2-4eac260727c9.JPG)
-
+  
     
