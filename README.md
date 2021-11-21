@@ -740,4 +740,23 @@
   - Aws take case of OS maintenance patching optimization setup, configuration , monitoring failure recovery and backups 
   - solution Architecture _cached 
   - ![Architecture](https://user-images.githubusercontent.com/22860697/142745177-2e854d51-bb12-4567-982f-243b92b12264.JPG)
-  
+- Dynamo DB
+  - Fully Managed Highly available with replication across 3 AZ
+  - NoSQL database not a relatinal Database
+  - scale to massive workload, distributed" serverless" database
+  - Million of requests per sercond , trillion of row, 100s of Tb of storage 
+  - Fast and consistent in performence
+  - single digit millisecond lattency low latency retrival
+  - Integrated with IAM for Security, Authorization and adminstration 
+  - Low Cost and Auto scaling capabilities
+  - type of data:
+    - DynamoDb is key/Value database
+    - ![dynamotype](https://user-images.githubusercontent.com/22860697/142745749-edb1dff9-d080-4f37-be1e-02c4b8e7ac42.JPG)
+- DynamoDB accelerator - DAX
+  - Fully Manageed in  memory cache for DynamoDB
+  - 10X performance improment - single digit Millisecond latency to microseconds latency when accessing your DynamoDb Table
+  - Secure highly scalable and highly available 
+  - Differance with ElastiCache at CCP leve: DAX is only used for and is integrated with DynamoDb whuile ElastiCache Can be used for other databases
+  - ![DAX](https://user-images.githubusercontent.com/22860697/142745836-aef5872e-fab3-47f0-935a-918ae93494ba.JPG)
+
+    
