@@ -737,7 +737,7 @@
   - ElastiCache is to get managed Redis or Memcached
   - Caches are in memoru databses with high  performance low latency
   - helps reduce load off data bases for read intensive workloads
-  - Aws take case of OS maintenance patching optimization setup, configuration , monitoring failure recovery and backups 
+  - Aws take case of OS maintenance patching optimization setup, configuration , monitoring failure recovery and backups
   - solution Architecture _cached 
   - ![Architecture](https://user-images.githubusercontent.com/22860697/142745177-2e854d51-bb12-4567-982f-243b92b12264.JPG)
 - Dynamo DB
@@ -762,5 +762,86 @@
   - Make a dynamo Db table accessible with low latency in multiple region 
   - active active replication (read/write to any Aws region )
   - ![dynamoGlolble](https://user-images.githubusercontent.com/22860697/142747852-9e712691-3186-4f9d-9ff2-4eac260727c9.JPG)
-  
-    
+- Redshift Overvew:
+  -  Redshift is based on PostgreSQl, but its not used for OLTP
+  -  its OLAP online analytical processing (analytics and data warehousing)
+  -  load data once every hour not every second
+  -  10x better performance  than other data warehouses, scale to PBs of data
+  -  Columnar storage of data (instead of row based)
+  -  Massively Parallel Query Execution (Mpp)highly Available
+  -  Pay as you go based on the instance provisioned
+  -  Has a SQL interface for performing the queries
+  -  Bl tool s such as AWS Quicksight or Tableau integrate with it 
+- EMR overview  (Elastic Map reduce)
+  - help cerating Hadoop Cluster (bigdata) to analyze and process vast amount data
+  - the cluster can be made of hunderad of EC2 instances
+  - also supports APache SPark, Hbase , Presto, Flink ...
+  - EMR take caer of all the provisioning an configuration 
+  - AUto-Scaling and integrated with Spot Instances
+  - USe cases data processing machine Learning Wbe indexing big data
+- AMazon Etherna
+  - Serverless query service to perform analytics against S3 objects
+  - Uses standard SQL language to queru the file
+  - suports CSV, JSON ORC , avro adn parquet built on Presto
+  - Pricing $5 per TB of data Scanned
+  - used compressed or columnar data for cost saving less scan 
+  - use cases Business intelligence / analytic / reporting , analyze adn query VPC Flow Logs, ELB Logs, ClouDTrail TRails, ETc...
+  - Exam top: analyze data in S# using Serverless SQL use Athena 
+  - ![amazonAthena](https://user-images.githubusercontent.com/22860697/142804637-5d565372-f7b7-4f8c-9085-fa6797e95250.JPG)
+- QuickSight 
+  - Serverless machine learning powered business intelligence service to create interactive Dashboards
+  - Fast, Automatically Scalable embeddable with per- session pricing 
+  - USe Cases:
+    - Business Analytics
+    - Building Visualizations
+    - Perform Ad HOc analysic
+    - Get business Insight using data
+  - Integrated with RDS, Aurora, Athena, Redshift, S3 ...
+ - DOcument DB :
+   - same for MONgoDB
+   - MongoDB is used to store, Query, and index Json Data
+   - similar depyment concepts as AUrora
+   - Full Managed highly Available with replication across 3 AZ
+   - Aurora storage automatically grows in incresments of 10gb up to 64Tb
+   - automatically scales to workloads with millions of request per seconds
+ - Amazon Neptune
+   - Fully managerd graph databases
+   - A popular graphs dataset would be a social networj
+      - user have friends
+      - post have comments
+      - comments have like form users
+      - user share and like post
+   - Hightly available across  3 AZ , with up to 15 read  replicas
+   - Build and run applications working with highly connected datasets- optimized for these complex and hard queries 
+   - can store up to billion of relation and query the graphs with milliseconds  latency
+   - highly available with replicaiton across multiple AZs
+   - great for knowledge graphs, Fraud detection,recommendatoon engines social networking
+   - ![nepture](https://user-images.githubusercontent.com/22860697/142806172-c4edecd6-059e-4dbb-8a39-cb1edfcbaf85.JPG)
+- Amazon QLDB
+  - stands for Quatum Ledger Database
+  - A Ledger is a book recording finacial transactions
+  - Full  Managed Serverless high available replication across 3 AZ
+  - userd to review hitory of all the changes made to your application  data overtime
+  - immuatale system no entry can be removed or modified cryptograpically verifiable
+  - 2 3x better performance than common ledger blockchain frame works manipulate data using SQL 
+  - Difference with Amazon managed Blockchain : No decentralization component in ccordance with financcial regulatin rules
+  - ![qldb](https://user-images.githubusercontent.com/22860697/142806981-42aea9c5-f4d1-4888-a9ec-62588e5ff0d3.JPG)
+- Amazon Managed Blockchain 
+  - blockchain makes it possible to build applications where multiple parties can execute transactions without need for a trusted central authority
+  - AMazon Managed Blockchain is a managed service to:
+    - Join public blockchain networks
+    - or create your own scalable provate network
+  - Compatible with frameworks Hyperledger Fabric and Ethereum 
+- DMS - Database migration service
+  - Quickly adn Securely migrate databases to aws , resilient self healing
+  - the Source database remains available during the migration
+  - supports
+    - Homogeneous migration: Ex Oracle to Oracle
+    - heterogeneous migrationsL: Ex Microsoft SQl server to Aurora
+    - ![DMS](https://user-images.githubusercontent.com/22860697/142808073-6bbdcef3-4c97-4bc3-bf57-438b62c0b95c.JPG)
+- AWS GLUE
+  - managerd extract transform and load ETL service
+  - userful to prepare and transform data for analytices
+  - fully serverless service
+  - ![Glue](https://user-images.githubusercontent.com/22860697/142808628-027391e1-b72f-40d6-938c-45f7b458ee14.JPG)
+
