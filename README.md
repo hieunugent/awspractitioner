@@ -844,4 +844,35 @@
   - userful to prepare and transform data for analytices
   - fully serverless service
   - ![Glue](https://user-images.githubusercontent.com/22860697/142808628-027391e1-b72f-40d6-938c-45f7b458ee14.JPG)
+## docker
+  - what is docker
+    - docker is software deverlpmet platform to deploy app
+    - Apps  are packaged in containers that can be run on any OS
+    - Apps run the same regardless of where they are run 
+      - any machine
+      - no compatibility issues
+      - Predictable behavior
+      - less work
+      - Easier to maintain and deploy
+      - Work with any languahe any OS any Technology
+     - Scale Container up and down very quickly 
+  - Where Docker images are stored 
+    - Docker  images are stored in docker repositories
+    - Public DOcker Hub : https://hb.docker.com
+      - Find base images for many technology or OS:
+      - UBuntu
+      - MySQL
+      - NodeJS, Java ...
+    - Private: Amazon ECR(ELastic  COntainer Registry)
+  - DOcker versus Vitual Machines
+    - DOcker is sort of a citualization Technology, But not exactly 
+    - Resource are shared with the host => many containers on one server
+    ![docker](https://user-images.githubusercontent.com/22860697/143983691-b44b150d-d7cb-46fa-a5c2-84ff98d25efd.JPG)
+  - ECS
+    - ECS = Elastic Container Service
+    - Launch  DOcker Container on AWS
+    -  You mus provision and maintain the infrastructure teh EC2 instances
+    -  AWS tyakes caere of starting stopping containers
+    -  Has integrations with the application Load Balancer
+    -  ![ecsservice](https://user-images.githubusercontent.com/22860697/143985527-85920447-0eb4-4b3b-83b5-b227fd207a29.JPG)
 
