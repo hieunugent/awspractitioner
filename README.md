@@ -886,4 +886,13 @@
   - Private Docker Registry on AWS 
   - this is where you store your Docker images so they can be run By ECS or fargate
   ![ECR](https://user-images.githubusercontent.com/22860697/143986815-743b0f5f-67a8-45f3-a4e4-3e603c3567c9.JPG)
+- What's Serverless
+  - Serverless is a new paradigm in which the developers don't have to manage servers anymore ...
+  - they just deploy code
+  - they just deploy ... functions
+  - Initially  ... Serverless == Faas (Function as a Service)
+  - Serverless was pioneered by AWS Lambda but now also includes anything that's managed : databases messageing storage, etc
+  - serverless does not mean there are no servers it means you just dont manage provision see them
+  ![serverless](https://user-images.githubusercontent.com/22860697/143988479-d149a131-2487-4221-82c8-7989fd2dc39c.JPG)
+ 
 
