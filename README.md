@@ -874,5 +874,16 @@
     -  You mus provision and maintain the infrastructure teh EC2 instances
     -  AWS tyakes caere of starting stopping containers
     -  Has integrations with the application Load Balancer
-    -  ![ecsservice](https://user-images.githubusercontent.com/22860697/143985527-85920447-0eb4-4b3b-83b5-b227fd207a29.JPG)
+      ![ecsservice](https://user-images.githubusercontent.com/22860697/143985527-85920447-0eb4-4b3b-83b5-b227fd207a29.JPG)
+- Fargate
+  - Launch Docker container on AWS
+  - you do not provision the infrastructure (no EC2 instances to manage) - simpler
+  - Serverless Offering
+  - AWS just runs containers for you based on the CPU / RAM you need 
+  ![Fargate](https://user-images.githubusercontent.com/22860697/143985888-0797cf4c-068c-486a-83c6-5655f2344c3e.JPG)
+- ECR 
+  - Elastic Container Registry
+  - Private Docker Registry on AWS 
+  - this is where you store your Docker images so they can be run By ECS or fargate
+  ![ECR](https://user-images.githubusercontent.com/22860697/143986815-743b0f5f-67a8-45f3-a4e4-3e603c3567c9.JPG)
 
