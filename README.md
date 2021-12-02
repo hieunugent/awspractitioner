@@ -894,5 +894,35 @@
   - Serverless was pioneered by AWS Lambda but now also includes anything that's managed : databases messageing storage, etc
   - serverless does not mean there are no servers it means you just dont manage provision see them
   ![serverless](https://user-images.githubusercontent.com/22860697/143988479-d149a131-2487-4221-82c8-7989fd2dc39c.JPG)
- 
-
+- Why AWS Lambda
+  - Amazon EC2
+    - Virtual Servers in The Cloud
+    - Limited by RAM and CPU
+    - Continously running 
+    - Scaling means intervention to add / remove servers
+  - Amazon Lambda
+    - Virtua Function - no Servers to manage
+    - Limited by time - Short execution
+    - Run on Demand
+    - Scaling is automated
+- Benefit of AWS Lambda
+  - Easy Pricing
+    - pay per request and compute time
+    - Free tier of 1,000,000 AWS lambda requests and 400K GBs of compute time
+  - Integrated with the whole AWS suite of services
+  - Event-driven: functions get invoked by AWS when needed
+  - Integrated with many programming languages
+  - Easy Monitering through AWS CloudWatch
+  - Easy to get more resources per functions (up to 10Gb of RAM)
+  - increasing RAM will also improve CPU and NEtwork
+- AWS Lambda language support
+  - Nodeks python java C# .net Core GoLang C# Powershell Ruby Custom RUntime API
+  - Lambda Container image
+    - the container image must implement the lambda Runtime API
+    - ECS/ Fargate is perferred for running arbitrary DOcekr images
+  - serverless Thumbnail Creation
+  - Serverless Cron Job every time define
+- AWS Lambda Pricing
+  - Pay per call
+  - Pay per duration
+  - it is usually very cheap to run AWS Lambda so it very popular
