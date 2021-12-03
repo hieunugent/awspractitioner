@@ -926,3 +926,29 @@
   - Pay per call
   - Pay per duration
   - it is usually very cheap to run AWS Lambda so it very popular
+- AWS API Gateway
+  - Fully managed service for develper to easily create publish maintain  monitor and secure APis 
+  - Serverless and scalable
+  - Supports RESTful APIs adn WEBSOCket APIs
+  - Supports for security user authentication , API Throttling API keys monitoring ..
+    ![gatway](https://user-images.githubusercontent.com/22860697/144559571-fe6c45b8-6e49-4dd6-9312-907d83569cbc.JPG)
+- AWS BATCH
+  - Fully managed batch processing at any scale
+  - Effciently run 100ks of computing batch job on AWS
+  - A "bacth" job js a job with a start and an end  (opposed to continuous)
+  - Batch will dynamically launch EC2 instances or spot instances
+  - AWS Batch provisions the right amount of compute /memory
+  - you submit or schedule batch jobs and AWS Batch does the rest
+  - Batch  Jobs are defined as DOcker images and run on ECS
+  - Helpful for cost optimizations and focusing less on the infrastructure
+- Batch vs Lambda;'
+  - Lambda:
+    - time limited
+    - Limited runtimes
+    - limited temporary disk space
+    - serverless
+   - Batch:
+      - No Time limited
+      - Any runtime as long as its packaged as a docker image
+      - Rely on EBS / Instance store for disk space
+      - Relies on EC2 (can be managed by AWS
