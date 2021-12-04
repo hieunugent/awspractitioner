@@ -952,3 +952,14 @@
       - Any runtime as long as its packaged as a docker image
       - Rely on EBS / Instance store for disk space
       - Relies on EC2 (can be managed by AWS
+- Amazon Lightsail
+  - Virtual servers Storage databases and networking 
+  - low and predictable pricing 
+  - simplier alternative to using EC2 RDS ELB EBS route 53 ...
+  - Great for people with littel cloud experience
+  - can setup notifications and monitoring of your Lightsail resources 
+  - Use cases:
+    - Simple web application(has templates for Lamp, Nginx, MEAN, NODE.js ..)
+    - websites (templates for Wordpress, Magento, Plesk, Joomla)
+    - Dev/Test environment
+  - Has high Availability but no auto scaling limited AWS integration 
