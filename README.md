@@ -963,3 +963,23 @@
     - websites (templates for Wordpress, Magento, Plesk, Joomla)
     - Dev/Test environment
   - Has high Availability but no auto scaling limited AWS integration 
+- Other Compute - Summary
+  - Docker: container technology to run applications
+  - ECS: run docker containers on EC2 Instances
+  - Fargate: 
+    - run Docker containers without provisioning the infrastructure
+    - Serverless offering no EC2 instance
+  - ECR: Private Docker Images Respository
+  - Batch: run batch jobs on AWS across managed EC2 instances
+  - lightsail: predictable adn low pricing for simple application and DB Stack 
+- Lambda Summary 
+  - Lambda is serverless, Function as a service , seamless scaling reactive
+  - Lambda Billing:
+    - by the time run x by the RAM provisioned
+    - by the number of innovations
+  - Languages Support: many programming languages except(arbitrary) DOCKer 
+  - Invocation time upto 15 minutes
+  - USe cases
+    - Create Thumbnails for images uploaded onto S3
+    - run a serverless cron job
+  - API Gateway: Expose Lambda function as HTTP API
