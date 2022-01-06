@@ -983,3 +983,11 @@
     - Create Thumbnails for images uploaded onto S3
     - run a serverless cron job
   - API Gateway: Expose Lambda function as HTTP API
+# What is CloudFormation 
+- CloudFormation is a declarative way of outlining your AWSA infrastructure for any resoureces 
+- benifit: 
+  - infrastructure as code: 
+    - no resources are manually created which is excellent for control 
+    - change to the infrastructure are reviewed through code
+  - 
+
