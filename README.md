@@ -989,5 +989,7 @@
   - infrastructure as code: 
     - no resources are manually created which is excellent for control 
     - change to the infrastructure are reviewed through code
-  - 
+  - Code :
+    - Each resource within the stack is tagged with an identifier so you can easily see how much a stack costs you
+    
 
