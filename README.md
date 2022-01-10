@@ -991,5 +991,6 @@
     - change to the infrastructure are reviewed through code
   - Code :
     - Each resource within the stack is tagged with an identifier so you can easily see how much a stack costs you
-    
+    - you can estimate the cost of you resources using the CloudFormation template
+    - Saving strategy: In dev, you could automation deletion of templates at %p, and recreated at 8am safely
 
