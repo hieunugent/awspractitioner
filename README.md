@@ -962,7 +962,7 @@
     - Simple web application(has templates for Lamp, Nginx, MEAN, NODE.js ..)
     - websites (templates for Wordpress, Magento, Plesk, Joomla)
     - Dev/Test environment
-  - Has high Availability but no auto scaling limited AWS integration 
+  - Ha high Availability buto auto scaling limited AWS integration 
 - Other Compute - Summary
   - Docker: container technology to run applications
   - ECS: run docker containers on EC2 Instances
@@ -993,4 +993,8 @@
     - Each resource within the stack is tagged with an identifier so you can easily see how much a stack costs you
     - you can estimate the cost of you resources using the CloudFormation template
     - Saving strategy: In dev, you could automation deletion of templates at %p, and recreated at 8am safely
+  - Productivity: 
+    - Ability to destroy adn recreate an infrasruture on the cloudn on the fly
+    - Automatred generation of DIagram for your  templates
+    - declarative programing  
 
