@@ -997,4 +997,8 @@
     - Ability to destroy adn recreate an infrasruture on the cloudn on the fly
     - Automatred generation of DIagram for your  templates
     - declarative programing  
+  - Don't reinvent teh wheel
+    - Leverage existing temoplates on the web
+    - leverage the Documentation 
+  - 
 
