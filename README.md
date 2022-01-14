@@ -1000,5 +1000,6 @@
   - Don't reinvent teh wheel
     - Leverage existing temoplates on the web
     - leverage the Documentation 
-  - 
+  - Support almost all AWS resources: 
+    - 
 
