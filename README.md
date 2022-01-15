@@ -1001,5 +1001,13 @@
     - Leverage existing temoplates on the web
     - leverage the Documentation 
   - Support almost all AWS resources: 
-    - 
+```
+Resources: 
+  MyInstances: 
+    Type: AWS::EC2::Instance
+    Properties: 
+      Availablilityzone: us-east-1a
+      ImageId: ami-a4c7hha
+      InstanceType: t2.micro 
+```
 
